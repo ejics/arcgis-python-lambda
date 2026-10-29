@@ -18,7 +18,6 @@ ArcGIS API for Python を AWS Lambda で利用する。
 
 ## 補足（Amazon Linux 2023 で pip コマンドにより環境構築する場合）
 1. 事前に必要な開発ツールをインストール
-# pyenvに必要なものをinstall
 sudo yum groupinstall "Development Tools"
 sudo yum install -y bzip2-devel ncurses-devel libffi-devel readline-devel openssl-devel zlib-devel
 

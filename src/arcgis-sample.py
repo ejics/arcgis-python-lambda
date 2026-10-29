@@ -9,3 +9,8 @@ def lambda_handler(event, context):
     logger.info("start arcgis api for python.")
     gis = GIS("https://https://www.arcgis.com", "[username]", "[password]")
     logger.info("end.")
+    
+    return {
+      'StatusCode': 200,
+      'Body': '正常に実行されました'
+    }

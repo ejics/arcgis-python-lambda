@@ -1,9 +1,13 @@
 arcgis
 ujson
+six
 requests
 requests_toolbelt
 requests_ntlm
+requests_ntlm2
+requests_kerberos
 requests_oauthlib
+requests_gssapi
 cachetools
 charset_normalizer
 idna
@@ -16,4 +20,11 @@ oauthlib
 geomet
 puremagic
 pandas
-numpy
+numpy==2.2.6
+pydantic
+pydantic_core
+typing_extensions
+typing_inspection
+annotated_types
+pyspnego
+pytz

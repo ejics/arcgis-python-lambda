@@ -18,7 +18,8 @@ cp -r src build/function/
 # Pack python libraries
 echo "Pack python libraries"
 #pip install -r requirements.txt -t build/layer/python
-pip install -r requirements.txt --no-deps -t build/layer/python
+#pip install -r requirements.txt --no-deps -t build/layer/python
+pip install -r requirements.txt --no-deps -t build/layer/python --no-cache-dir
 
 # Remove pycache in build directory
 find build -type f | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm

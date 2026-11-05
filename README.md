@@ -18,24 +18,27 @@ ArcGIS API for Python を AWS Lambda で利用する。
 
 ## 補足（Amazon Linux 2023 で pip コマンドにより環境構築する場合）
 1. 事前に必要な開発ツールをインストール<br/>
-```sudo yum groupinstall "Development Tools"<br/>
-sudo yum install -y bzip2-devel ncurses-devel libffi-devel readline-devel openssl-devel zlib-devel<br/>
+```
+sudo yum groupinstall "Development Tools"
+sudo yum install -y bzip2-devel ncurses-devel libffi-devel readline-devel openssl-devel zlib-devel
 ```
 2. pyenvのインストール<br/>
-```curl https://pyenv.run | bash<br/>
+```
+curl https://pyenv.run | bash
 ```
 
 3. パスを通す<br/>
-```~/.bash_profile<br/>
-export PYENV_ROOT="$HOME/.pyenv"<br/>
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"<br/>
-eval "$(pyenv init -)"<br/>
+```
+~/.bash_profile
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
-~/.bashrc<br/>
-export PYENV_ROOT="$HOME/.pyenv"<br/>
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"<br/>
-eval "$(pyenv init -)"<br/>
-eval "$(pyenv virtualenv-init -)"<br/>
+~/.bashrc
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 ```
 
 4. python3.12のインストール<br/>

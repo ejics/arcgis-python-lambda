@@ -17,31 +17,31 @@ ArcGIS API for Python を AWS Lambda で利用する。
    → `terraform apply`<br/>
 
 ## 補足（Amazon Linux 2023 で pip コマンドにより環境構築する場合）
-1. 事前に必要な開発ツールをインストール
-sudo yum groupinstall "Development Tools"
-sudo yum install -y bzip2-devel ncurses-devel libffi-devel readline-devel openssl-devel zlib-devel
+1. 事前に必要な開発ツールをインストール<br/>
+sudo yum groupinstall "Development Tools"<br/>
+sudo yum install -y bzip2-devel ncurses-devel libffi-devel readline-devel openssl-devel zlib-devel<br/>
 
 2. pyenvのインストール
-curl https://pyenv.run | bash
+curl https://pyenv.run | bash<br/>
 
 3. パスを通す
-~/.bash_profile
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+~/.bash_profile<br/>
+export PYENV_ROOT="$HOME/.pyenv"<br/>
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"<br/>
+eval "$(pyenv init -)"<br/>
 
-~/.bashrc
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+~/.bashrc<br/>
+export PYENV_ROOT="$HOME/.pyenv"<br/>
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"<br/>
+eval "$(pyenv init -)"<br/>
+eval "$(pyenv virtualenv-init -)"<br/>
 
 4. python3.12のインストール
-pyenv install 3.12.6
-# python3.12.1に切り替え
-pyenv global 3.12.6
-# バージョンの確認
-python -V
+pyenv install 3.12.6<br/>
+# python3.12.1に切り替え<br/>
+pyenv global 3.12.6<br/>
+# バージョンの確認<br/>
+python -V<br/>
 
 5. Amazon Linux 2023 でpipをアップグレードする。<br/>
 → `python -m pip install --upgrade pip`<br/>

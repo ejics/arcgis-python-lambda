@@ -18,14 +18,15 @@ ArcGIS API for Python を AWS Lambda で利用する。
 
 ## 補足（Amazon Linux 2023 で pip コマンドにより環境構築する場合）
 1. 事前に必要な開発ツールをインストール<br/>
-sudo yum groupinstall "Development Tools"<br/>
+```sudo yum groupinstall "Development Tools"<br/>
 sudo yum install -y bzip2-devel ncurses-devel libffi-devel readline-devel openssl-devel zlib-devel<br/>
-
+```
 2. pyenvのインストール<br/>
-curl https://pyenv.run | bash<br/>
+```curl https://pyenv.run | bash<br/>
+```
 
 3. パスを通す<br/>
-~/.bash_profile<br/>
+```~/.bash_profile<br/>
 export PYENV_ROOT="$HOME/.pyenv"<br/>
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"<br/>
 eval "$(pyenv init -)"<br/>
@@ -35,6 +36,7 @@ export PYENV_ROOT="$HOME/.pyenv"<br/>
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"<br/>
 eval "$(pyenv init -)"<br/>
 eval "$(pyenv virtualenv-init -)"<br/>
+```
 
 4. python3.12のインストール<br/>
 pyenv install 3.12.6<br/>

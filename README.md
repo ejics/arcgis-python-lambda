@@ -42,12 +42,14 @@ eval "$(pyenv virtualenv-init -)"
 ```
 
 4. python3.12のインストール<br/>
-pyenv install 3.12.6<br/>
-# python3.12.1に切り替え<br/>
-pyenv global 3.12.6<br/>
-# バージョンの確認<br/>
-python -V<br/>
+```
+pyenv install 3.12.6
+# python3.12.1に切り替え
+pyenv global 3.12.6
+# バージョンの確認
+python -V
+```
 
 5. Amazon Linux 2023 でpipをアップグレードする。<br/>
-→ `python -m pip install --upgrade pip`<br/>
+→ `python -m pip install --upgrade pip`
 
